@@ -9,4 +9,4 @@ if (visitorCount) {
     visitorCount = 1;
     localStorage.setItem("page_view", 1);
   }
-  counterContainer.innerHTML = visitorCount;
+  counterContainer.innerText = visitorCount;
