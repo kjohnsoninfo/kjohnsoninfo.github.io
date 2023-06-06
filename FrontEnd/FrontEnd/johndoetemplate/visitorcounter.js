@@ -9,4 +9,5 @@ if (visitorCount) {
     visitorCount = 1;
     localStorage.setItem("page_view", 1);
   }
-  counterContainer.innerText = visitorCount;
+
+  document.getElementById('counter').innerText = visitorCount;
