@@ -11,8 +11,6 @@ This code is for my personal website.
 * Node.js;
 * Custom domain name;
 
-### My Diagram to Visualize the Process
-
 ## My Steps
 ### 1: Host Static Website in GitHub Pages
 
@@ -27,15 +25,11 @@ The second step was to make the website use HTTPS for security. I ran into an is
 ```
 These steps ensured that when the user accessed the custom domain it would be routed through the Cloudflare server before reaching the Azure webserver.
 
-### 3: Create CosmosDB database
+### 3: Create 
 
 ### 4. Write a script to count the number of visits to my site
 
-### 5. Create API to connect CosmosDB and web application
-
-### 6. Integration
-
-### 7. Front End HTML and CSS
+### 5. Front End HTML and CSS
 
 I used a template made by DevCRUD here. Huge thanks to DevCRUD. <br /><br />
 
