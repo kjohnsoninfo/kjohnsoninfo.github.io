@@ -33,6 +33,17 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.portrait-crop{
+  display: inline-block;
+  height: 215px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.portrait-crop img{
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -353,7 +364,6 @@ section {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
   position: relative;
   color: #173b6c;
 }
@@ -950,9 +960,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  padding: 30px;
   background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .php-email-form .form-group {
