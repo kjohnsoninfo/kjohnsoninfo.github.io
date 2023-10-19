@@ -9,10 +9,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html, body {margin:0;padding:0;height:100%;}
 body {
   font-family: "Open Sans", sans-serif;
   font-size: large;
   color: #272829;
+  min-height: 100%;
+  position: relative;
 }
 
 a {
@@ -34,17 +37,29 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.portrait-crop{
-  display: inline-block;
-  height: 215px;
-  width: 50%;
-  overflow: hidden;
+/* container */
+.responsive-two-columns {
+  display:flex;
+  flex-wrap:wrap;
 }
 
-.portrait-crop img{
-  width: 100%;
+/* columns */
+.responsive-two-columns > * {
+  width:100%;
+  padding:1rem;
 }
 
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .responsive-two-columns > * {
+      width:50%;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 2120px;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -87,9 +102,7 @@ h6 {
   left: 0;
   bottom: 0;
   width: 300px;
-  transition: all ease-in-out 0.5s;
   z-index: 9997;
-  transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
@@ -152,6 +165,8 @@ h6 {
 @media (max-width: 1199px) {
   #header {
     left: -300px;
+    transition: all 0.5s;
+    transition: all ease-in-out 0.5s;
   }
 
   #main {
@@ -162,6 +177,7 @@ h6 {
   .container-fluid {
     padding-left: 12px;
     padding-right: 12px;
+    max-width: 2415px;
   }
 }
 
@@ -247,6 +263,10 @@ h6 {
   left: 0;
 }
 
+.mobile-nav-active #footer {
+  left: 0;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -319,7 +339,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 30px;
   overflow: hidden;
 }
 
@@ -673,6 +693,7 @@ section {
   padding-top: 40px;
 }
 
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -696,26 +717,23 @@ section {
 
  .portfolio-info {
   padding: 30px;
-  width: 80%;
-  box-shadow: 0 0 24px 0 rgb(0 0 0 / 0.2);
+  /* width: 100%; */
+  /* box-shadow: 0 0 24px 0 rgb(0 0 0 / 0.2); */
 }
 
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.portfolio-details .portfolio-info h5 {
+  padding-bottom: 5px;
 }
 
 .portfolio-info ul {
   list-style: none;
   padding: 0;
-}
-
-.portfolio-info li {
-  margin-top: 10px;
-  padding: 5px 0px;
 }
 
 .portfolio-details .portfolio-description {
@@ -1136,8 +1154,10 @@ section {
 
 @media (max-width: 1199px) {
   #footer {
-    position: static;
-    width: auto;
+    left: -300px;
+    transition: all 0.5s;
+    transition: all ease-in-out 0.5s;
+    width: 300px;
     padding-right: 20px 15px;
   }
 }
