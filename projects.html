@@ -50,7 +50,7 @@
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Kara Johnson</a></h1>
-        <p class="text-light text-center" style="font-size: small; margin: 0;"> Software Engineer | Technical Director</p>
+        <p class="text-light text-center" style="font-size: small; margin: 0;"> Software Engineer | Technical Artist</p>
         <p class="text-light text-center" style="font-size: small;"> karajohnson.info@gmail.com</p>
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/karajohnson-info/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -61,31 +61,132 @@
       </div>
     </div>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="index.html" class="nav-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="projects.html" class="nav-link active"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-          <li><a href="resume.html" class="nav-link"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="about.html" class="nav-link"><i class="bx bx-user"></i> <span>About Me</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="index.html" class="nav-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="projects.html" class="nav-link active"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        <li><a href="resume.html" class="nav-link"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="about.html" class="nav-link"><i class="bx bx-user"></i> <span>About Me</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Portfolio Details Section ======= -->
+    <!-- ======= Title Section ======= -->
     <section class="inner-page portfolio-details" style="padding: 30px 30px;">
+      <div class="section-title">
+          <h2 style="text-align: center;">Projects</h2>
+      </div>
       <div class="container">
-          <div class="section-title" style="padding: 0;">
-            <h2>Projects</h2>
+
+        <div id= "matId" class="row" style="padding: 0px;">
+          <div class="responsive-two-columns">
+            <div class="portfolio-info text-center">
+              <h3 style="padding: 0px;">Material ID Script</h3>
+              <div class="skill">
+                <h5>Python</h5><h5>PyQt5/Pyside2</h5><h5>MEL</h5><h5>Maya</h5>
+              </div>
+              <p style="margin-top: 1rem;">The Material ID Tool allows a user to apply generated IDs to objects in Maya for visualization purposes and 
+                easy texture assignment when moving assets to other DCCs. </p>
+              <p style="margin: 0;"><b>Features include:</b></p>
+              <ul>
+                <li><b>-</b> Automatically generate materials and shading groups with random colors for predefined IDs</li>
+                <li><b>-</b> Apply materials to objects with a single button click</li>
+                <li><b>-</b> Reset object materials to default 'lambert1' if mistakes are made</li>
+                <li><b>-</b> Select all objects with a specific material by right clicking the button</li>
+              </ul>
+              <p>The tool was originally created for asset migration to Unreal Engine 5 but is not restricted.</p>
+            </div>
+            <div class="portfolio-info text-center">
+              <section id="portfolio" class="portfolio" style="padding: 0px;">
+                  <div class="portfolio-wrap">
+                    <img src="https://github.com/kjohnson8781/MayaTools_KJ/blob/main/imgs/materialIdDemo.gif?raw=true" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                      <a href="https://github.com/kjohnson8781/MayaTools_KJ/blob/main/imgs/materialIdDemo.gif?raw=true" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                    </div>
+                  </div>
+                </section>
+                <div class="contact">
+                  <form class="php-email-form text-center">
+                    <button type="submit" formaction="https://github.com/kjohnson8781/MayaTools_KJ">Read More on GitHub</button>
+                  </form>
+                </div>
+            </div>
           </div>
+
+          <hr style="width: 100%; height: 3px;background: #149ddd;">
+          
+          <div id= "versionTool" class="row" style="padding: 0px;">
+            <div class="responsive-two-columns">
+              <div class="portfolio-info text-center">
+                <h3 style="padding: 0px;">Version Control Tool</h3>
+                <div class="skill">
+                  <h5>Python</h5><h5>PyQt5/Pyside2</h5><h5>VEX</h5><h5>Houdini</h5>
+                </div>
+                <p style="margin-top: 1rem;">The Houdini Version Control Tool allows a user to increment and save a Houdini file with a version suffix automatically. </p>
+                <p style="margin: 0;"><b>Features include:</b></p>
+                <ul>
+                  <li><b>-</b> Auto-increment and save versions with _v### suffix (also works with _V### if that is existing format)</li>
+                  <li><b>-</b> Add default _v001 if file does not have version</li>
+                  <li><b>-</b> User has option to overwrite or save as latest version if incremented version already exists</li>
+                  <li><b>-</b> Easily view a list of all versions of the current file via the shelf tool</li>
+                  <li><b>-</b> Seamlessly switch between versions by double-clicking to open desired version from the list</li>
+                </ul>
+              </div>
+              <div>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/899397492?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                  title="Version Control Tool for Houdini"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                <div class="contact">
+                  <form class="php-email-form text-center">
+                    <button type="submit" formaction="https://github.com/kjohnson8781/HoudiniTools_KJ">Read More on GitHub</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <hr style="width: 100%; height: 3px;background: #149ddd;">
+
+            <div id= "mushroomGen" class="row" style="padding: 0px;">
+              <div class="responsive-two-columns">
+                <div class="portfolio-info text-center">
+                  <h3 style="padding: 0px;">Procedural Asset Generator: Mushrooms</h3>
+                  <div class="skill">
+                    <h5>VEX</h5><h5>Houdini</h5>
+                  </div>
+                  <p style="margin-top: 1rem;">The Procedural Mushroom Generator allows users to procedurally model and colorize a mushroom in Houdini. </p>
+                  <p style="margin: 0;"><b>Features include:</b></p>
+                  <ul>
+                    <li><b>-</b> Create a mushroom model from any user-created curve</li>
+                    <li><b>-</b> Edit stem and cap properties including color, shape, size, and more</li>
+                    <li><b>-</b> Add and edit cap accessories </li>
+                    <li><b>-</b> Add and edit cap noise for more realistic, non-symmetrical shapes</li>
+                    <li><b>-</b> Change curve at any time and all previous changes will remain</li>
+                  </ul>
+                </div>
+                <div>
+                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/886541907?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    title="Procedural Mushroom Generator"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+              <hr style="width: 100%; height: 3px;background: #149ddd;">
+
           <div id= "rubik" class="row" style="padding: 0px;">
             <div class="responsive-two-columns">
               <div class="portfolio-info text-center">
                 <h3 style="padding: 0px;">Rubik's Cube Script</h3>
-                <p>Technical Skills: Python, PyQt5/Pyside2, MEL, Maya</p>
-                <p>The Rubik Cube python script allows a user to model and manipulate a Rubik's cube in any Maya scene.</p>
+                <div class="skill">
+                  <h5>Python</h5><h5>PyQt5/Pyside2</h5><h5>MEL</h5><h5>Maya</h5>
+                </div>
+                <p style="margin-top: 1rem;">The Rubik Cube python script allows a user to model and manipulate a Rubik's cube in any Maya scene.</p>
                 <p style="margin: 0;"><b>Features include:</b></p>
                 <ul>
                   <li><b>-</b> Create a fully-textured Rubik Cube</li>
@@ -113,13 +214,16 @@
                 </div>
               </div>
             </div>
+          </div>
             <hr style="width: 100%; height: 3px;background: #149ddd;">
             <div id= "rubik" class="row" style="padding: 0px;">
               <div class="responsive-two-columns">
                 <div class="portfolio-info text-center">
                   <h3 style="padding: 0px;">Cloud Resume Challenge</h3>
-                  <p>Technical Skills: Azure, JavaScript, HTML/CSS</p>
-                  <p>The Cloud Resume Challenge is a project put forth by Forrest Brazeal and was my first attempt at building a personal website.</p>
+                  <div class="skill">
+                    <h5>Azure</h5><h5>JavaScript</h5><h5>HTML/CSS</h5>
+                  </div>
+                  <p style="margin-top: 1rem;">The Cloud Resume Challenge is a project put forth by Forrest Brazeal and was my first attempt at building a personal website.</p>
                   <p>The website is hosted in Azure and uses Cloudflare for network security. I wrote a JavaScript file that counts the number of visitors
                      to my site and stores it in a database. My data is stored CosmosDB and connected via a serverless API using Azure functions.</p>
                   <p>I've since revamped my website but I learned a ton about cloud and web technologies in this project.</p>
@@ -136,7 +240,7 @@
               </div>
               <hr style="width: 100%; height: 3px;background: #149ddd;">
         </div>
-        <div id= "wip" class="row" style="padding: 0px;">
+        <!-- <div id= "wip" class="row" style="padding: 0px;">
           <div class="section-title" style="padding: 15px 0px 0px 0px">
             <h3>Works in Progress</h3>
           </div>
@@ -171,7 +275,7 @@
             </div>
           </div>
           <hr style="width: 100%; height: 3px;background: #149ddd;">
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -180,15 +284,14 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="container">
-    <div class="credits" style="font-size: x-small;">
+    <div class="credits" style="font-size: 10px;">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      Created with iPortfolio template <a href="https://bootstrapmade.com/">BootstrapMade.</a> 
-      Logo courtesy of <a href="https://favicon.io/">favicon.io.</a>
+      Created with iPortfolio template <a href="https://bootstrapmade.com/">BootstrapMade</a> and <a href="https://favicon.io/">favicon.io.</a>
     </div>
-    <div class="copyright" style="font-size: small;">
+    <div class="copyright" style="font-size: 12px;">
       &copy; Copyright 
       <script>document.write( new Date().getFullYear() );</script>  <strong><span>Kara Johnson</span></strong>
     </div>
