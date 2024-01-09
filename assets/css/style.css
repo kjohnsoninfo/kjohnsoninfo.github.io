@@ -662,7 +662,6 @@ section {
 }
 
 .portfolio .portfolio-wrap::before {
-  content: "";
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
@@ -764,7 +763,7 @@ section {
     padding: 5px 15px;
     display: inline;
     font-weight: 600;
-    margin: 0px 5px;
+    margin: 5px 5px;
     text-align: center;
 }
 

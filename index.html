@@ -51,13 +51,13 @@
     <div class="d-flex flex-column">
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="/">Kara Johnson</a></h1>
+        <h1 class="text-light"><a href="./">Kara Johnson</a></h1>
         <p class="text-light text-center" style="font-size: small; margin: 0;"> Software Engineer | Technical Artist</p>
         <p class="text-light text-center" style="font-size: small;"> karajohnson.info@gmail.com</p>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/karajohnson-info/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/kjohnson8781" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://vimeo.com/showcase/10736491" class="vimeo"><i class="bx bxl-vimeo"></i></a>
+          <a href="https://www.linkedin.com/in/karajohnson-info/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/kjohnson8781" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://vimeo.com/showcase/10736491" target="_blank" rel="noopener noreferrer" class="vimeo"><i class="bx bxl-vimeo"></i></a>
           <a href="mailto:karajohnson.info@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
         </div>
       </div>
@@ -84,16 +84,18 @@
       </div>
       <div id="featured" class="row" style="padding: 0px;">
         <div class="double-column text-center">
-          <div class="section-title text-center">
+          <div class="section-title">
             <h3>Featured Project</h3>
             <h5>Material ID Script for Maya</h5>
           </div>
-          <section id="portfolio" class="portfolio" style="padding: 0px; width: 75%; align-self: center;">
+          <section id="image" class="portfolio" style="padding: 0px; width: 75%; align-self: center;">
             <div class="portfolio-wrap">
-              <img src="assets/img/materialIdDemo.gif" class="img-fluid" alt="">
+              <a href="assets/img/materialIdDemo.gif" class="portfolio-lightbox" style="display: inline-block;">
+                <img src="assets/img/materialIdDemo.gif" class="img-fluid" alt="">
+              </a>
               <div class="portfolio-links">
-                <a href="assets/img/materialIdDemo.gif" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
+                <a href="assets/img/materialIdDemo.gif" class="portfolio-lightbox"><i
+                    class="bx bx-zoom-in"></i></a>
               </div>
             </div>
           </section>
@@ -101,24 +103,26 @@
             predefined IDs to objects in Maya for visualization
             and texture assignment. It is primarily used for identification of object materials and parts when moving
             assets to other DCCs. </p>
-          <div>
-            <div>
+          <div class="d-flex" style="justify-content: center;">
+            <div style="width: fit-content;">
               <h5><b>Highlights include:</b></h5>
-              <ul style="list-style: none;">
-                <li><b>-</b> Actively used by artists in the Kyber Initiative project to eliminate manual processes and
-                  integrate models to UE5 </li>
-                <li><b>-</b> Reads a text file from any directory on the user computer with the file path editable at
-                  any time </li>
-                <li><b>-</b> Edit the text file directly from the script using Add and Delete buttons </li>
-                <li><b>-</b> Customizable UI with a scrollable, resizeable window and a custom column size setting that
-                  is saved per user preference</li>
-                <li><b>-</b> Continuously adapted to user feedback by aligning and enhancing features based on artist
-                  requirements </li>
-              </ul>
+              <div style="text-align: left;">
+                <ul style="list-style: none;">
+                  <li><b>-</b> Actively used by artists in the Kyber Initiative project to eliminate manual processes and
+                    integrate models to UE5 </li>
+                  <li><b>-</b> Reads a text file from any directory on the user computer with the file path editable at
+                    any time </li>
+                  <li><b>-</b> Edit the text file directly from the script using Add and Delete buttons </li>
+                  <li><b>-</b> Customizable UI with a scrollable, resizeable window and a custom column size setting that
+                    is saved per user preference</li>
+                  <li><b>-</b> Continuously adapted to user feedback by aligning and enhancing features based on artist
+                    requirements </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <p>For more info, check out my <a href="projects" class="project">Project Portfolio</a> and
-            <a href="https://github.com/kjohnson8781/MayaTools_KJ" class="project">Technical Documentation</a>!
+          <p>For more info, check out my <a href="./projects" class="project">Project Portfolio</a> and
+            <a href="https://github.com/kjohnson8781/MayaTools_KJ" target="_blank" rel="noopener noreferrer" class="project">Technical Documentation</a>!
           </p>
           <hr style="width: 100%; height: 3px;background: #149ddd;">
         </div>
@@ -130,32 +134,40 @@
             <p style="margin-top: 1rem;">I'm currently working on some side projects with two groups of artists and
               developers:</p>
           </div>
-          <div class="responsive-two-columns">
-            <div class="portfolio-info">
+          <div class="responsive-two-columns" style="justify-content: center;">
+            <div class="portfolio-info" style="max-width: 500px;">
               <h5 style="padding: 0px;"><b>Kyber Initiative Game Project</b></h5>
               <div class="skill">
                 <h5>Unreal Engine 5</h5>
                 <h5>Maya</h5>
                 <h5>Houdini</h5>
               </div>
-              <ul style="list-style: none; margin-top: 1rem;">
-                <li><b>-</b> Over 30 artists and developers working on a remaster</li>
-                <li><b>-</b> Currently building a HDA in Houdini that will procedurally generate rock assets for
-                  environmental art models exported to UE5</li>
-              </ul>
+              <div class="d-flex" style="justify-content: center;">
+                <div style="width: fit-content;">
+                  <ul style="list-style: none; margin-top: 1rem; text-align: left;">
+                    <li><b>-</b> Over 30 artists and developers working on a remaster</li>
+                    <li><b>-</b> Currently building a HDA in Houdini that will procedurally generate rock assets for
+                      environmental art models exported to UE5</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="portfolio-info">
+            <div class="portfolio-info" style="max-width: 500px;">
               <h5 style="padding: 0px;"><b>Dream Drop Studios</b></h5>
               <div class="skill">
                 <h5>Unreal Engine 5</h5>
                 <h5>Blueprints/C++</h5>
                 <h5>Trello</h5>
               </div>
-              <ul style="list-style: none; margin-top: 1rem;">
-                <li><b>-</b> A 25-member studio creating a cat-and-mouse co-op horror game</li>
-                <li><b>-</b> Currently implementing a customized and efficient UI system using Common UI plugin and
-                  Unreal Engine 5 Blueprints </li>
-              </ul>
+              <div class="d-flex" style="justify-content: center;">
+                <div style="width: fit-content;">
+                  <ul style="list-style: none; margin-top: 1rem; text-align: left;">
+                    <li><b>-</b> A 25-member indie studio creating a cat-and-mouse co-op horror game</li>
+                    <li><b>-</b> Currently implementing a customized and efficient UI system using Common UI plugin and
+                      Unreal Engine 5 Blueprints </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
