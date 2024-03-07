@@ -64,7 +64,7 @@ h6 {
 
 /* container */
 .responsive-four-columns {
-  max-width: 70%;
+  max-width: 80%;
   display:flex;
   flex-wrap:wrap;
   align-items: center;
