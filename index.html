@@ -10,14 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon-16x16.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="assets/img/android-chrome-192x192.png" rel="android-chrome-192x192">
+  <link href="assets/img/icons/favicon-16x16.png" rel="icon">
+  <link href="assets/img/icons/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/icons/android-chrome-192x192.png" rel="android-chrome-192x192">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,16 +25,14 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free-6.4.2-web/css/fontawesome.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free-6.4.2-web/css/brands.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: iPortfolio - edited by Kara Johnson
-  * Updated: Oct 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Template Name: Kelly - edited by Kara Johnson
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -43,234 +40,105 @@
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="./">Kara Johnson</a></h1>
-        <p class="text-light text-center" style="font-size: small; margin: 0;"> Software Engineer | Technical Artist</p>
-        <p class="text-light text-center" style="font-size: small;"> karajohnson.info@gmail.com</p>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/karajohnson-info/" target="_blank" rel="noopener noreferrer"
-            class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/kjohnsoninfo" target="_blank" rel="noopener noreferrer" class="github"><i
-              class="bx bxl-github"></i></a>
-          <a href="https://vimeo.com/showcase/10736491" target="_blank" rel="noopener noreferrer" class="vimeo"><i
-              class="bx bxl-vimeo"></i></a>
-          <a href="mailto:karajohnson.info@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
-        </div>
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column">
+        <h1 class="logo d-flex me-auto me-lg-0"><a href="./">Kara Johnson</a>
+          <a href="https://www.linkedin.com/in/karajohnson-info/" class="social-links" style="padding-left: 10px;"><i
+               class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/kjohnsoninfo?tab=repositories" class="social-links"><i
+               class="bi bi-github"></i></a>
+          <a href="mailto:karajohnson.info@gmail.com" class="social-links"><i class="bi bi-envelope"></i></a>
+        </h1>
+        <p style="margin-bottom: 0px;">Technical Artist | Software Engineer</p>
       </div>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="active" href="./">Home</a></li>
+          <li><a href="./portfolio">Portfolio</a></li>
+          <li><a href="assets/pdf/KaraJohnson_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          <li><a href="./about">About</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
     </div>
 
-    <nav id="navbar" class="nav-menu navbar">
-      <ul>
-        <li><a href="./" class="nav-link active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="./projects" class="nav-link"><i class="bi bi-tools"></i> <span>Project Portfolio</span></a></li>
-        <li><a href="assets/pdf/KaraJohnson_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link"><i
-              class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="./about" class="nav-link"><i class="bx bx-user"></i> <span>About Me</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
   </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
   <main id="main">
-
-    <!-- ======= Home Section ======= -->
-    <section class="inner-page" style="padding: 60px 60px 0px 60px;">
-      <div class="section-title text-center" style="display: grid;">
-        <h1>Howdy! I'm Kara Johnson</h1>
-        <h3 style="font-weight: normal; font-size: 25px;">Software Engineer and Technical Artist focused on building
-          tools for artists and developers</h3>
-        <div class="responsive-four-columns" style="justify-self: center; justify-content: center; padding: 5px;">
-          <div class="contact">
-            <form class="php-email-form text-center" target="_blank" rel="noopener noreferrer">
-              <button type="submit" formaction="./projects"><i class="bi bi-tools"></i>&ensp;Project Portfolio</button>
-            </form>
+    <section id="hero" class="d-flex flex-column">
+      <div class="container">
+        <h2>
+          Howdy! I'm Kara Johnson
+        </h2>
+        <h3>
+          Technical Artist and Software Engineer focused on building tools for artists and developers
+        </h3>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center">
+        <a class="btn" style="margin-right: 10px;" href="assets/pdf/KaraJohnson_Resume.pdf"
+        target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
+        <a class="btn" style="margin-left: 10px;" href="mailto:karajohnson.info@gmail.com">
+          Email Me
+        </a>
+      </div>
+      <div class="row links">
+        <div class="col-lg-4 col-6 text-center d-flex flex-column align-items-center">
+          <div>
+            <a href="https://deadliftgamestudios.com/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/fmo.png" class="img-fluid" alt="">
+            </a>
           </div>
-          <div class="contact">
-            <form class="php-email-form text-center" target="_blank" rel="noopener noreferrer">
-              <button type="submit" formaction="assets/pdf/KaraJohnson_Resume.pdf"><i
-                  class="bx bx-file-blank"></i>&ensp;Resume</button>
-            </form>
-          </div>
-          <div class="contact">
-            <form class="php-email-form text-center" target="_blank" rel="noopener noreferrer">
-              <button type="submit" formaction="https://github.com/kjohnsoninfo"><i
-                  class="bx bxl-github"></i>&ensp;GitHub</button>
-            </form>
-          </div>
-          <div class="contact">
-            <form class="php-email-form text-center" target="_blank" rel="noopener noreferrer">
-              <button type="submit" formaction="mailto:karajohnson.info@gmail.com"><i
-                  class="bi bi-envelope"></i>&ensp;Email Me</button>
-            </form>
+          <div class="info">
+            <p>Deadlift Studios <br> Full Metal Overdrive <br> <b>Technical Artist - Tools & Pipeline</b></p>
           </div>
         </div>
-        <h2 style="font-weight: normal; font-size: 25px;"></h2>
-      </div>
-
-      <div id="featured" class="row" style="padding: 0px;">
-        <div class="double-column">
-          <div class="section-title">
-            <h3>Featured Project</h3>
+        <div class="col-lg-4 col-6 text-center d-flex flex-column align-items-center">
+          <div>
+            <a href="/portfolio">
+              <img src="assets/img/assetActions/assetActionsDemo.gif" class="img-fluid" alt="">
+            </a>
           </div>
-          <div class="responsive-two-columns">
-            <div class="portfolio-info d-flex" style="justify-content: center; align-self: start;">
-              <div class="section-title" style="max-width: 750px;">
-                <h3 style="padding: 0px; text-align: center;">Procedural Asset Generator: Canyon Rocks</h3>
-                <div class="skill">
-                  <h5>Houdini</h5>
-                  <h5>VEX</h5>
-                  <h5>Unreal Engine 5</h5>
-                  <h5>xNormal</h5>
-                </div>
-                <p style="margin-top: 1rem;"><b>Problem:</b> The Kyber Initiative project lacks a dedicated
-                  environmental artist for background assets.
-                  This has led to a large blocker in being able to complete level designs and maps. We needed a resource
-                  that could create environmental
-                  assets for our first level in a relatively short amount of time. In addition, it was important for us
-                  to avoid repetitive and boring scenes
-                  by surrounding the player with diverse assets. </p>
-                <p style="margin-top: 1rem;"><b>Solution:</b> The Procedural Rock Generator allows a user to input a
-                  base shape to create procedural rock structures. Artists can edit multiple
-                  properties including target polygon counts, number of pieces created, and several noise settings. The
-                  tool creates both a high poly and a
-                  low poly version of the assets. The details of the high poly asset are exported as a normal map and
-                  can be applied to the low poly asset
-                  which has autogenerated UVs. The HDA can also be linked to a TOPS network for easy export. </p>
-                <h5 style="margin-top: 2rem; text-align: center;"><b>Highlights include:</b></h5>
-                <div style="text-align: left;">
-                  <ul style="list-style: none;">
-                    <li> <span style="font-weight:900">-</span> Create a rock model from any input base shape </li>
-                    <li> <span style="font-weight:900">-</span> Edit rock properties including target polycount, number
-                      of pieces, piece height ramp, and more </li>
-                    <li> <span style="font-weight:900">-</span> Edit noise settings such as frequency, amplitude, and
-                      offset to get the perfect look </li>
-                    <li> <span style="font-weight:900">-</span> Autogenerate uv maps for low poly assets and normal maps
-                      for high poly assets</li>
-                    <li> <span style="font-weight:900">-</span> Export options auto center pivot and rotate for easier
-                      import into Unreal Engine 5 </li>
-                  </ul>
-                  <br>
-                  <p>For use in our Kyber Initiative project, I overcame several limitations that arose when using the
-                    noncommercial verison of Houdini. This included restricted normal map exports and file formats.
-                    In addition, I consistently collaborated with artists to work through several iterations of the
-                    tool, revising methods based on feedback. Read more about my process on <a
-                      href="https://github.com/kjohnsoninfo/HoudiniRockGenerator" target="_blank"
-                      rel="noopener noreferrer" class="project">GitHub</a>!</p>
-                </div>
-              </div>
-            </div>
-            <section id="portfolio" class="portfolio" style="padding: 0px;">
-              <div class="portfolio-wrap" style="margin-top: 30px;">
-                <a href="assets/img/diffTypes.gif" class="portfolio-lightbox" style="display: inline-block;">
-                  <img src="assets/img/diffTypes.gif" class="img-fluid" alt="">
-                </a>
-                <div class="portfolio-links">
-                  <a href="assets/img/diffTypes.gif" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-                </div>
-              </div>
-              <p style="margin-bottom: 1rem; text-align: center;">Procedural Rock Generator Demo</p>
-              <div class="portfolio-wrap">
-                <a href="assets/img/env.png" class="portfolio-lightbox" style="display: inline-block;">
-                  <img src="assets/img/env.png" class="img-fluid" alt="">
-                </a>
-                <div class="portfolio-links">
-                  <a href="assets/img/env.png" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-                </div>
-              </div>
-              <p style="margin: 0px; text-align: center;">Example of high and low poly assets in Unreal Engine 5</p>
-              <p style="margin-bottom: 1rem; text-align: center; font-size: small;">(Materials and ground/sky assets
-                from Valley of the Ancient sample project)</p>
-              <div class="portfolio-wrap">
-                <a href="assets/img/ue5highvslow2.png" class="portfolio-lightbox" style="display: inline-block;">
-                  <img src="assets/img/ue5highvslow2.png" class="img-fluid" alt="">
-                </a>
-                <div class="portfolio-links">
-                  <a href="assets/img/ue5highvslow2.png" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-                </div>
-              </div>
-              <p style="margin: 0px; text-align: center;">High vs Low poly comparison in Unreal Engine 5</p>
-              <p style="margin-bottom: 1rem; text-align: center; font-size: small;">(Materials and ground/sky assets
-                from Valley of the Ancient sample project)</p>
-            </section>
+          <a class="btn" href="/portfolio" target="_blank" rel="noopener noreferrer">Released Tools</a>
+        </div>
+        <div class="col-lg-4 col-6 text-center d-flex flex-column align-items-center">
+          <div>
+            <a href="https://github.com/kjohnsoninfo?tab=repositories">
+              <img src="assets/img/code.png" class="img-fluid" alt="">
+            </a>
           </div>
-          <div class="contact">
-            <form class="php-email-form text-center" target="_blank" rel="noopener noreferrer">
-              <button type="submit" formaction="./projects"><i class="bi bi-tools"></i>&ensp;See More Projects</button>
-            </form>
-          </div>
-          <hr style="width: 100%; height: 3px;background: #149ddd;">
+          <a class="btn" href="https://github.com/kjohnsoninfo?tab=repositories" target="_blank" 
+          rel="noopener noreferrer">Code & Documentation</a>
         </div>
       </div>
-
-      <div id="wip" class="row" style="padding: 0px;">
-        <div class="column text-center">
-          <div class="section-title">
-            <h3>Works In Progress</h3>
-            <p style="margin-top: 1rem;">Check out what I'm currently working on here:</p>
-          </div>
-        </div>
-        <div class="responsive-two-columns">
-          <div class="portfolio-info d-flex" style="justify-content: center;">
-            <div class="section-title" style="max-width: 750px;">
-              <h3 style="padding: 0px; text-align: center;">Kyber Initiative Game Project</h3>
-              <div class="skill">
-                <h5>Unreal Engine 5</h5>
-                <h5>Maya</h5>
-                <h5>Houdini</h5>
-              </div>
-              <div style="text-align: left; padding: 1rem;">
-                <ul style="list-style: none;">
-                  <li> <span style="font-weight:900">-</span> Over 30 artists and developers working on hobby project to
-                    remaster an old video game released in 2005 </li>
-                  <li> <span style="font-weight:900">-</span> Currently building a lightweight batch export/convert tool
-                    for Maya to complement our procedural asset workflow. This tool will
-                    import .obj assets into Maya and export them as .fbx </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <section id="portfolio" class="portfolio" style="padding: 0px;">
-            <div class="portfolio-wrap d-flex" style="justify-content: center;">
-              <a href="assets/img/exportPreview.png" class="portfolio-lightbox d-flex" style="justify-content: center;">
-                <img src="assets/img/exportPreview.png" class="img-fluid" alt="" style="width: 70%; margin-top: 1rem;">
-              </a>
-              <!-- <div class="portfolio-links">
-                <a href="assets/img/exportPreview.png" class="portfolio-lightbox"><i class="bx bx-zoom-in"></i></a>
-              </div> -->
-            </div>
-            <p style="margin-bottom: 1rem; text-align: center;">Tool will expand on Maya's current exporter</p>
-          </section>
-        </div>
-      </div>
-    </section><!-- End Home -->
-  </main><!-- End #main -->
+    </section><!-- End Hero -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="credits" style="font-size: 10px;">
+      <div class="copyright">
+        &copy; Copyright
+        <script>document.write(new Date().getFullYear());</script> <strong><span>Kara Johnson</span></strong>
+      </div>
+      <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
         Created with <a href="https://bootstrapmade.com/">BootstrapMade</a> and <a
-          href="https://favicon.io/">favicon.io.</a>
-      </div>
-      <div class="copyright" style="font-size: 12px;">
-        &copy; Copyright
-        <script>document.write(new Date().getFullYear());</script> <strong><span>Kara Johnson</span></strong>
+           href="https://favicon.io/">favicon.io.</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
+  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -279,8 +147,9 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
