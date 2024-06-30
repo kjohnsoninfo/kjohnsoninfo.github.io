@@ -679,12 +679,14 @@ section {
 }
 
 .about .content ul {
-  list-style: none;
+  list-style: square;
   padding: 0;
 }
 
-.about .content ul li {
-  padding-bottom: 10px;
+.about ul li {
+  font-size: large;
+  margin-left: 1em;
+  margin-bottom: 0.2rem;
 }
 
 .about .content ul i {
