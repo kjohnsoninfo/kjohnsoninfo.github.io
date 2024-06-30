@@ -678,7 +678,7 @@ section {
   font-size: large;
 }
 
-.about .content ul {
+.about ul {
   list-style: square;
   padding: 0;
 }
