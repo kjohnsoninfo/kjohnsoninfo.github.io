@@ -12,7 +12,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   /* color: #444444; */
-  font-size: large;
   color: #222222;
   min-height: 100vh;
   display: flex;
@@ -475,6 +474,10 @@ h6 {
   font-size: x-large;
   font-weight: bold;
   position: relative;
+}
+
+#hero .p {
+  font-size: large;
 }
 
 /* #hero h2::after {
